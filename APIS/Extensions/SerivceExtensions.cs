@@ -105,7 +105,7 @@ namespace RentingCars.APIS.Extensions
                 options.UseSqlServer(configuration.GetConnectionString("Default"));
             });
         }
-     
+
         private static void ConfigureEmailSettings(IServiceCollection services, IConfiguration configuration)
         {
             var emailConfig = configuration.GetSection("EmailConfiguration").Get<EmailSettings>();
